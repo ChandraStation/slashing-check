@@ -8,7 +8,7 @@ You will need two json files. One file before the slash, the other file after th
 
 * Post Slash ```{daemon} q staking delegations-to {valoper-address} --height {height right after the slash} --node {rpc node} --chain-id {chain-id} --limit {amount of delegations} --output json > post-slash.json```
 
-Keep in mind nodes are usually pruning their data which means they most likely will not contain the blocks you are querying for, unless it is right after the slashing event. **Please use an archive node**
+Keep in mind nodes are usually pruning their data which means they most likely will not contain the blocks you are querying for, unless it is right after the slashing event. **Please use an archive node**. Vigilant stakers will delegate away from your node right before or after the slash. Heights here are important to find who was actually slashed. 
 
 ### Run
 1. Install Python
